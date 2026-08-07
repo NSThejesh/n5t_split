@@ -314,17 +314,17 @@
             bindings = <
 &kp CAPSLOCK                  &hold_q LG(Q) Q  &kp W       &kp E                  &kp R                &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I       &kp O       &hold_p LG(P) P     &kp BSPC
 &mt LS(LA(LC(LEFT_GUI))) TAB  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K       &mt RALT L  &mt RGUI SEMICOLON  &hyper
-&kp LSHFT                     &kp GRAVE        &kp Z       &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M       &kp COMMA   &kp PERIOD          &kp RIGHT_SHIFT
-                                                           &hold_op LEFT_SHIFT 0  &lt 4 ESCAPE         &lt 2 SPACE          &lt 1 RET           &lt 3 TAB        &kp DELETE
+&tog 7                        &kp GRAVE        &kp Z       &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M       &kp COMMA   &kp PERIOD          &kp RIGHT_SHIFT
+                                                           &hold_op LEFT_SHIFT 0  &lt 6 ESCAPE         &lt 2 SPACE          &lt 1 RET           &lt 3 TAB        &kp DELETE
             >;
         };
 
         numandwm {
             display-name = "NUM";
             bindings = <
-&kp EQUAL          &kp N5            &kp NUMBER_4          &kp NUMBER_3                      &kp NUMBER_2          &kp NUMBER_1         &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)                 &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
-&kp MINUS          &kp N0            &hold_9 LC(SPACE) N9  &hold_8 LS(LA(LC(LG(SPACE)))) N8  &hold_7 LG(SPACE) N7  &mt ESCAPE NUMBER_6  &kp LCTRL      &kp LEFT_SHIFT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT_ALT      &kp LEFT_GUI      &none
-&kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN          &kp LS(COMMA)     &kp LS(PERIOD)    &none
+&kp EQUAL          &kp N5            &kp NUMBER_4          &kp NUMBER_3                      &kp NUMBER_2          &kp NUMBER_1         &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
+&kp MINUS          &kp N0            &hold_9 LC(SPACE) N9  &hold_8 LS(LA(LC(LG(SPACE)))) N8  &hold_7 LG(SPACE) N7  &mt ESCAPE NUMBER_6  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
+&kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN  &kp LS(COMMA)     &kp LS(PERIOD)    &none
                                                            &kp TAB                           &kp DELETE            &kp ENTER            &none          &none           &none
             >;
         };
@@ -332,40 +332,20 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&none  &none     &none     &none      &none      &none  &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
-&none  &none     &none     &none      &none      &none  &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
-                           &none      &none      &none  &kp RET        &kp BSPC   &kp DEL
+&none  &none     &none     &none   &none      &none      &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &none
+&none  &kp LGUI  &kp LALT  &hyper  &kp LSHFT  &kp LCTRL  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
+&none  &none     &none     &none   &none      &none      &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
+                           &none   &none      &none      &kp RET        &kp BSPC   &kp DEL
             >;
         };
 
         symbols {
             display-name = "NUM";
             bindings = <
-&kp PLUS         &kp PERCENT            &kp DOLLAR                          &kp HASH                                &kp AT_SIGN                  &kp EXCLAMATION   &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)                 &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
-&kp UNDERSCORE   &kp RIGHT_PARENTHESIS  &hold_9 LC(SPACE) LEFT_PARENTHESIS  &hold_8 LS(LA(LC(LG(SPACE)))) ASTERISK  &hold_7 LG(SPACE) AMPERSAND  &mt ESCAPE CARET  &kp LCTRL      &kp LEFT_SHIFT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT_ALT      &kp LEFT_GUI      &none
-&kp RIGHT_BRACE  &kp LEFT_BRACE         &kp NON_US_BACKSLASH                &kp SLASH                               &kp SQT                      &kp SEMICOLON     &none          &kp LESS_THAN   &kp GREATER_THAN          &kp LS(COMMA)     &kp LS(PERIOD)    &none
+&kp PLUS         &kp PERCENT            &kp DOLLAR                          &kp HASH                                &kp AT_SIGN                  &kp EXCLAMATION   &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
+&kp UNDERSCORE   &kp RIGHT_PARENTHESIS  &hold_9 LC(SPACE) LEFT_PARENTHESIS  &hold_8 LS(LA(LC(LG(SPACE)))) ASTERISK  &hold_7 LG(SPACE) AMPERSAND  &mt ESCAPE CARET  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
+&kp RIGHT_BRACE  &kp LEFT_BRACE         &kp NON_US_BACKSLASH                &kp SLASH                               &kp SQT                      &kp SEMICOLON     &none          &kp LESS_THAN   &kp GREATER_THAN  &kp LS(COMMA)     &kp LS(PERIOD)    &none
                                                                             &kp TAB                                 &kp DELETE                   &kp ENTER         &none          &none           &none
-            >;
-        };
-
-        sym_layer {
-            display-name = "SYM";
-            bindings = <
-&none  &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC   &none  &none      &none      &none     &none     &none
-&none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS   &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
-&none  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE   &none  &none      &none      &none     &none     &none
-                            &kp LPAR   &kp RPAR   &kp UNDER  &none  &none      &none
-            >;
-        };
-
-        media_layer {
-            display-name = "MEDIA";
-            bindings = <
-&none  &none     &none     &none      &none      &none  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &none         &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &ext_power EP_TOG  &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT    &none
-&none  &none     &none     &none      &none      &none  &out OUT_TOG       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_CLR
-                           &none      &none      &none  &kp C_STOP         &kp C_PP         &kp C_MUTE
             >;
         };
 
@@ -379,6 +359,16 @@
             >;
         };
 
+        layer_7 {
+            display-name = "FUN";
+            bindings = <
+&kp F6  &kp F5   &kp F4          &kp PRINTSCREEN  &kp F1     &kp F2   &none  &none      &none      &none     &none     &none
+&none   &kp F11  &kp SCROLLLOCK  &kp F7           &kp F8     &kp F9   &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
+&none   &kp F10  &kp CAPSLOCK    &kp F10          &kp F11    &kp F12  &none  &none      &none      &none     &none     &none
+                                 &kp K_APP        &kp SPACE  &kp TAB  &none  &none      &none
+            >;
+        };
+
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
@@ -386,6 +376,16 @@
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
 &none  &none     &none     &none      &none      &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
                            &none      &none      &none  &mkp MCLK       &mkp LCLK       &mkp RCLK
+            >;
+        };
+
+        media_layer {
+            display-name = "MEDIA";
+            bindings = <
+&none  &none     &none     &none      &none      &none  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &none         &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &ext_power EP_TOG  &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT    &none
+&none  &none     &none     &none      &none      &none  &out OUT_TOG       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_CLR
+                           &none      &none      &none  &kp C_STOP         &kp C_PP         &kp C_MUTE
             >;
         };
     };
