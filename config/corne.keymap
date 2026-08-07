@@ -335,7 +335,7 @@
 &none  &none     &none     &none   &none      &none      &kp LG(LS(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &none
 &none  &kp LGUI  &kp LALT  &hyper  &kp LSHFT  &kp LCTRL  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
 &none  &none     &none     &none   &none      &none      &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
-                           &none   &none      &none      &kp RET        &kp BSPC   &kp DEL
+                           &none   &none      &none      &kp RET        &kp DEL    &kp TAB
             >;
         };
 
@@ -344,7 +344,7 @@
             bindings = <
 &kp PLUS         &kp PERCENT            &kp DOLLAR                          &kp HASH                                &kp AT_SIGN                  &kp EXCLAMATION   &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
 &kp UNDERSCORE   &kp RIGHT_PARENTHESIS  &hold_9 LC(SPACE) LEFT_PARENTHESIS  &hold_8 LS(LA(LC(LG(SPACE)))) ASTERISK  &hold_7 LG(SPACE) AMPERSAND  &mt ESCAPE CARET  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
-&kp RIGHT_BRACE  &kp LEFT_BRACE         &kp NON_US_BACKSLASH                &kp SLASH                               &kp SQT                      &kp SEMICOLON     &none          &kp LESS_THAN   &kp GREATER_THAN  &kp LS(COMMA)     &kp LS(PERIOD)    &none
+&kp RIGHT_BRACE  &kp LEFT_BRACE         &kp NON_US_BACKSLASH                &kp SLASH                               &kp SQT                      &kp SEMICOLON     &none          &kp LESS_THAN   &kp GREATER_THAN  &kp COMMA         &kp PERIOD        &none
                                                                             &kp TAB                                 &kp DELETE                   &kp ENTER         &none          &none           &none
             >;
         };
@@ -352,9 +352,9 @@
         layer_7 {
             display-name = "FUN";
             bindings = <
-&none  &none  &none    &kp F1                 &kp F2                 &kp PSCRN              &none                  &kp LG(V)              &kp LG(C)  &kp LG(X)  &none     &none
-&none  &none  &kp F7   &kp F8                 &kp F9                 &kp SCROLLLOCK         &none                  &kp RSHFT              &kp RCTRL  &kp RALT   &kp RGUI  &none
-&none  &none  &kp F10  &kp F11                &kp F12                &kp CAPSLOCK           &none                  &none                  &none      &none      &none     &none
+&none  &none  &none    &kp F1                 &kp F2                 &kp PSCRN              &kp LG(Z)              &kp LG(V)              &kp LG(C)             &kp LG(X)       &kp LS(LG(Z))  &none
+&none  &none  &kp F7   &kp F8                 &kp F9                 &kp SCROLLLOCK         &none                  &kp LG(LS(NUMBER_3))   &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))  &none          &none
+&none  &none  &kp F10  &kp F11                &kp F12                &kp CAPSLOCK           &none                  &none                  &none                 &none           &none          &none
                        &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LG(LC(Z))))  &none
             >;
         };
