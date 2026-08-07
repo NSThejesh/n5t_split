@@ -290,10 +290,10 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&none  &none             &kp LS(MINUS)  &kp LS(EQUAL)     &kp MINUS                  &kp EQUAL  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4      &kp MINUS
-&none  &kp LEFT_COMMAND  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT             &none      &kp N5         &kp NUMBER_6  &kp N7        &kp N8                &kp N9            &kp N0
-&none  &kp LA(SPACE)     &kp LC(SPACE)  &kp LG(SPACE)     &kp LS(LA(LC(LG(SPACE))))  &none      &kp SEMICOLON  &kp SQT       &kp SLASH     &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                        &none             &none                      &none      &kp COMMA      &kp N0        &kp PERIOD
+&none  &none             &kp LS(MINUS)  &kp LS(EQUAL)         &kp MINUS                  &kp EQUAL  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4      &kp MINUS
+&none  &kp LEFT_COMMAND  &kp LEFT_ALT   &kp LS(LA(LC(LGUI)))  &kp LEFT_SHIFT             &kp LCTRL  &kp N5         &kp NUMBER_6  &kp N7        &kp N8                &kp N9            &kp N0
+&none  &kp LA(SPACE)     &kp LC(SPACE)  &kp LG(SPACE)         &kp LS(LA(LC(LG(SPACE))))  &none      &kp SEMICOLON  &kp SQT       &kp SLASH     &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                        &none                 &none                      &none      &kp COMMA      &kp N0        &kp PERIOD
             >;
         };
 
