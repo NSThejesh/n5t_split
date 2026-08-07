@@ -314,8 +314,8 @@
             bindings = <
 &kp CAPSLOCK                  &hold_q LG(Q) Q  &kp W       &kp E                  &kp R                &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I       &kp O       &hold_p LG(P) P     &kp BSPC
 &mt LS(LA(LC(LEFT_GUI))) TAB  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K       &mt RALT L  &mt RGUI SEMICOLON  &hyper
-&tog 7                        &kp GRAVE        &kp Z       &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M       &kp COMMA   &lt 5 PERIOD        &kp RIGHT_SHIFT
-                                                           &hold_op LEFT_SHIFT 0  &lt 6 ESCAPE         &lt 2 SPACE          &lt 1 RET           &lt 3 TAB        &kp DELETE
+&tog 6                        &kp GRAVE        &kp Z       &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M       &kp COMMA   &lt 4 PERIOD        &kp RIGHT_SHIFT
+                                                           &hold_op LEFT_SHIFT 0  &lt 5 ESCAPE         &lt 2 SPACE          &lt 1 RET           &lt 3 TAB        &kp DELETE
             >;
         };
 
@@ -349,22 +349,12 @@
             >;
         };
 
-        fun_layer {
-            display-name = "FUN";
-            bindings = <
-&none  &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN        &none  &none      &none      &none     &none     &none
-&none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK         &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
-&none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK  &none  &none      &none      &none     &none     &none
-                        &kp K_APP  &kp SPACE  &kp TAB          &none  &none      &none
-            >;
-        };
-
         layer_7 {
             display-name = "FUN";
             bindings = <
-&none  &none  &none    &kp F1                 &kp F2                 &kp PSCRN              &none                  &none                  &none      &none     &none     &none
-&none  &none  &kp F7   &kp F8                 &kp F9                 &kp SCROLLLOCK         &none                  &kp RSHFT              &kp RCTRL  &kp RALT  &kp RGUI  &none
-&none  &none  &kp F10  &kp F11                &kp F12                &kp CAPSLOCK           &none                  &none                  &none      &none     &none     &none
+&none  &none  &none    &kp F1                 &kp F2                 &kp PSCRN              &none                  &kp LG(V)              &kp LG(C)  &kp LG(X)  &none     &none
+&none  &none  &kp F7   &kp F8                 &kp F9                 &kp SCROLLLOCK         &none                  &kp RSHFT              &kp RCTRL  &kp RALT   &kp RGUI  &none
+&none  &none  &kp F10  &kp F11                &kp F12                &kp CAPSLOCK           &none                  &none                  &none      &none      &none     &none
                        &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LG(LC(Z))))  &none
             >;
         };
