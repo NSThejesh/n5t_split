@@ -201,6 +201,67 @@
             flavor = "tap-preferred";
             hold-while-undecided;
         };
+
+        hold_f: hold_f {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_F";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+        };
+
+        hold_d: hold_d {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_D";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
+
+        hold_q: hold_q {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_Q";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
+
+        hold_t: hold_t {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_T";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
+
+        hold_n: hold_n {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_N";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
+
+        hold_y: hold_y {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_Y";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -209,10 +270,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp TAB        &kp Q       &kp W       &kp E        &kp R                  &kp T                &kp Y        &kp U         &kp I        &kp O       &kp P         &kp BSPC
-&mt LCTRL ESC  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F            &kp G                &kp H        &mt RSHFT J   &mt RCTRL K  &mt RALT L  &mt RGUI SQT  &hyper
-&kp LSHFT      &kp Z       &kp X       &kp C        &kp V                  &kp B                &kp N        &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp ESC
-                                       &lt 7 ESC    &hold_op LEFT_SHIFT 0  &hold_space 2 SPACE  &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
+&kp TAB        &hold_q LG(Q) Q  &kp W       &kp E            &kp R                  &hold_t LG(T) T     &hold_y LG(Y) Y     &kp U         &kp I        &kp O       &kp P         &kp BSPC
+&mt LCTRL ESC  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D  &hold_f F LG(SPACE)    &mt LEFT_CONTROL G  &mt LEFT_CONTROL H  &kp J         &kp K        &mt RALT L  &mt RGUI SQT  &hyper
+&kp LSHFT      &kp Z            &kp X       &kp C            &kp V                  &kp B               &kp N               &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp ESC
+                                            &lt 7 ESC        &hold_op LEFT_SHIFT 0  &lt 2 SPACE         &lt SYM RET         &lt NUM BSPC  &lt FUN DEL
             >;
         };
 
