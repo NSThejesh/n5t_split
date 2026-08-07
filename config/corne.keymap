@@ -228,16 +228,6 @@
             flavor = "tap-preferred";
         };
 
-        hold_n: hold_n {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_N";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-        };
-
         hold_y: hold_y {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_Y";
@@ -274,6 +264,46 @@
             #binding-cells = <2>;
             tapping-term-ms = <350>;
         };
+
+        hold_copy: hold_copy {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_COPY";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            tapping-term-ms = <350>;
+        };
+
+        hold_paste: hold_paste {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_PASTE";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            tapping-term-ms = <350>;
+        };
+
+        hold_n: hold_n {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_N";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            tapping-term-ms = <350>;
+        };
+
+        hold_p: hold_p {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_P";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            tapping-term-ms = <350>;
+        };
     };
 
     keymap {
@@ -282,10 +312,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp TAB                       &hold_q LG(Q) Q  &kp W       &kp E            &kp R                  &hold_t LG(T) T     &hold_y LG(Y) Y     &kp U        &kp I         &kp O       &kp P         &kp BSPC
-&mt LS(LA(LC(LEFT_GUI))) ESC  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D  &hold_f F LG(SPACE)    &mt LEFT_CONTROL G  &mt LEFT_CONTROL H  &kp J        &kp K         &mt RALT L  &mt RGUI SQT  &hyper
-&kp LSHFT                     &kp Z            &kp Z       &kp X            &mt LG(C) C            &kp V               &kp B               &mt LG(N) N  &kp M         &kp COMMA   &kp PERIOD    &kp ESC
-                                                           &lt 7 TAB        &hold_op LEFT_SHIFT 0  &lt 2 SPACE         &lt 3 RET           &lt 2 BSPC   &lt 5 ESCAPE
+&kp TAB                       &hold_q LG(Q) Q  &kp W       &kp E            &kp R                  &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U       &kp I         &kp O       &hold_p LG(P) P     &kp BSPC
+&mt LS(LA(LC(LEFT_GUI))) TAB  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D  &hold_f F LG(SPACE)    &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J       &kp K         &mt RALT L  &mt RGUI SEMICOLON  &hyper
+&kp LSHFT                     &kp GRAVE        &kp Z       &kp X            &hold_copy LG(C) C     &hold_paste LG(V) V  &kp B               &none       &kp M         &kp COMMA   &kp PERIOD          &tog 6
+                                                           &lt 7 TAB        &hold_op LEFT_SHIFT 0  &lt 2 SPACE          &lt 3 RET           &lt 2 BSPC  &lt 5 ESCAPE
             >;
         };
 
