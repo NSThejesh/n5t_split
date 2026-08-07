@@ -314,18 +314,18 @@
             bindings = <
 &kp CAPSLOCK                  &hold_q LG(Q) Q  &kp W       &kp E            &kp R                  &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I         &kp O       &hold_p LG(P) P     &kp BSPC
 &mt LS(LA(LC(LEFT_GUI))) TAB  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D  &hold_f F LG(SPACE)    &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K         &mt RALT L  &mt RGUI SEMICOLON  &hyper
-&kp LSHFT                     &kp GRAVE        &kp Z       &kp X            &hold_copy LG(C) C     &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M         &kp COMMA   &kp PERIOD          &tog 7
-                                                           &lt 0 TAB        &hold_op LEFT_SHIFT 0  &lt 1 SPACE          &lt 4 RET           &lt 1 BSPC       &lt 6 ESCAPE
+&kp LSHFT                     &kp GRAVE        &kp Z       &kp X            &hold_copy LG(C) C     &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M         &kp COMMA   &kp PERIOD          &tog 6
+                                                           &lt 0 TAB        &hold_op LEFT_SHIFT 0  &lt 1 SPACE          &lt 3 RET           &lt 1 BSPC       &lt 5 ESCAPE
             >;
         };
 
         numandwm {
             display-name = "NUM";
             bindings = <
-&kp EQUAL         &kp N5             &kp NUMBER_4          &kp NUMBER_3                      &kp NUMBER_2          &kp NUMBER_1   &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)                 &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
-&kp MINUS         &kp N0             &hold_9 LC(SPACE) N9  &hold_8 LS(LA(LC(LG(SPACE)))) N8  &hold_7 LG(SPACE) N7  &kp NUMBER_6   &kp LCTRL      &kp LEFT_SHIFT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT_ALT      &kp LEFT_GUI      &none
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON  &kp ESCAPE     &kp LESS_THAN   &kp GREATER_THAN          &kp LS(COMMA)     &kp LS(PERIOD)    &none
-                                                           &kp TAB                           &kp DELETE            &kp ENTER      &none          &none           &none
+&kp EQUAL         &kp N5             &kp NUMBER_4          &kp NUMBER_3                      &kp NUMBER_2          &kp NUMBER_1         &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)                 &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
+&kp MINUS         &kp N0             &hold_9 LC(SPACE) N9  &hold_8 LS(LA(LC(LG(SPACE)))) N8  &hold_7 LG(SPACE) N7  &mt ESCAPE NUMBER_6  &kp LCTRL      &kp LEFT_SHIFT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT_ALT      &kp LEFT_GUI      &none
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN          &kp LS(COMMA)     &kp LS(PERIOD)    &none
+                                                           &kp TAB                           &kp DELETE            &kp ENTER            &none          &none           &none
             >;
         };
 
@@ -336,16 +336,6 @@
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
 &none  &none     &none     &none      &none      &none  &kp INS        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
                            &none      &none      &none  &kp RET        &kp BSPC   &kp DEL
-            >;
-        };
-
-        symbols {
-            display-name = "NUM";
-            bindings = <
-&none  &none             &kp LESS_THAN     &kp GREATER_THAN      &kp COMMA       &kp PERIOD  &kp EXCLAMATION  &kp AT_SIGN                  &kp HASH                                &kp DOLLAR                          &kp PERCENT            &kp PLUS
-&none  &kp LEFT_COMMAND  &kp LEFT_ALT      &kp LS(LA(LC(LGUI)))  &kp LEFT_SHIFT  &kp LCTRL   &kp CARET        &hold_7 LG(SPACE) AMPERSAND  &hold_8 LS(LA(LC(LG(SPACE)))) ASTERISK  &hold_9 LC(SPACE) LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&none  &kp LS(LGUI)      &kp LS(LEFT_ALT)  &kp LC(LEFT_ALT)      &kp LS(LCTRL)   &none       &kp COLON        &kp DOUBLE_QUOTES            &kp QUESTION                            &kp PIPE                            &kp LEFT_BRACE         &kp RIGHT_BRACE
-                                           &none                 &none           &none       &kp ENTER        &kp DEL                      &kp ESCAPE
             >;
         };
 
@@ -386,6 +376,16 @@
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
 &none  &none     &none     &none      &none      &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
                            &none      &none      &none  &mkp MCLK       &mkp LCLK       &mkp RCLK
+            >;
+        };
+
+        layer_8 {
+            display-name = "NUM";
+            bindings = <
+&kp EQUAL         &kp N5             &kp NUMBER_4          &kp NUMBER_3                      &kp NUMBER_2          &kp NUMBER_1         &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)                 &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
+&kp MINUS         &kp N0             &hold_9 LC(SPACE) N9  &hold_8 LS(LA(LC(LG(SPACE)))) N8  &hold_7 LG(SPACE) N7  &mt ESCAPE NUMBER_6  &kp LCTRL      &kp LEFT_SHIFT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT_ALT      &kp LEFT_GUI      &none
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN          &kp LS(COMMA)     &kp LS(PERIOD)    &none
+                                                           &kp TAB                           &kp DELETE            &kp ENTER            &none          &none           &none
             >;
         };
     };
