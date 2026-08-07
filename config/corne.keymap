@@ -362,10 +362,10 @@
         layer_7 {
             display-name = "FUN";
             bindings = <
-&kp F6  &kp F5   &kp F4          &kp PRINTSCREEN  &kp F1     &kp F2   &none  &none      &none      &none     &none     &none
-&none   &kp F11  &kp SCROLLLOCK  &kp F7           &kp F8     &kp F9   &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
-&none   &kp F10  &kp CAPSLOCK    &kp F10          &kp F11    &kp F12  &none  &none      &none      &none     &none     &none
-                                 &kp K_APP        &kp SPACE  &kp TAB  &none  &none      &none
+&none  &none  &kp PSCRN       &none      &kp F1     &kp F2   &none  &none      &none      &none     &none     &none
+&none  &none  &kp SCROLLLOCK  &kp F7     &kp F8     &kp F9   &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
+&none  &none  &kp CAPSLOCK    &kp F10    &kp F11    &kp F12  &none  &none      &none      &none     &none     &none
+                              &kp K_APP  &kp SPACE  &kp TAB  &none  &none      &none
             >;
         };
 
