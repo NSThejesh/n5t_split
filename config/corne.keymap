@@ -282,10 +282,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp TAB                       &hold_q LG(Q) Q  &kp W       &kp E            &kp R                  &hold_t LG(T) T     &hold_y LG(Y) Y     &kp U        &kp I      &kp O       &kp P         &kp BSPC
-&mt LS(LA(LC(LEFT_GUI))) ESC  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D  &hold_f F LG(SPACE)    &mt LEFT_CONTROL G  &mt LEFT_CONTROL H  &kp J        &kp K      &mt RALT L  &mt RGUI SQT  &hyper
-&kp LSHFT                     &kp Z            &kp Z       &kp X            &kp C                  &kp V               &kp B               &mt LG(N) N  &kp M      &kp COMMA   &kp PERIOD    &kp ESC
-                                                           &lt 7 ESC        &hold_op LEFT_SHIFT 0  &lt 2 SPACE         &lt 3 RET           &lt 2 BSPC   &lt 5 DEL
+&kp TAB                       &hold_q LG(Q) Q  &kp W       &kp E            &kp R                  &hold_t LG(T) T     &hold_y LG(Y) Y     &kp U        &kp I         &kp O       &kp P         &kp BSPC
+&mt LS(LA(LC(LEFT_GUI))) ESC  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D  &hold_f F LG(SPACE)    &mt LEFT_CONTROL G  &mt LEFT_CONTROL H  &kp J        &kp K         &mt RALT L  &mt RGUI SQT  &hyper
+&kp LSHFT                     &kp Z            &kp Z       &kp X            &mt LG(C) C            &kp V               &kp B               &mt LG(N) N  &kp M         &kp COMMA   &kp PERIOD    &kp ESC
+                                                           &lt 7 TAB        &hold_op LEFT_SHIFT 0  &lt 2 SPACE         &lt 3 RET           &lt 2 BSPC   &lt 5 ESCAPE
             >;
         };
 
