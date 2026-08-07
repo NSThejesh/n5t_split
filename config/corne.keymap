@@ -209,10 +209,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp TAB        &kp Q       &kp W       &kp E          &kp R                  &kp T                &kp Y        &kp U         &kp I        &kp O       &kp P         &kp BSPC
-&mt LCTRL ESC  &mt LGUI A  &mt LALT S  &mt LCTRL D    &mt LSHFT F            &kp G                &kp H        &mt RSHFT J   &mt RCTRL K  &mt RALT L  &mt RGUI SQT  &hyper
-&kp LSHFT      &kp Z       &kp X       &kp C          &kp V                  &kp B                &kp N        &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp ESC
-                                       &lt MEDIA ESC  &hold_op LEFT_SHIFT 0  &hold_space 2 SPACE  &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
+&kp TAB        &kp Q       &kp W       &kp E        &kp R                  &kp T                &kp Y        &kp U         &kp I        &kp O       &kp P         &kp BSPC
+&mt LCTRL ESC  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F            &kp G                &kp H        &mt RSHFT J   &mt RCTRL K  &mt RALT L  &mt RGUI SQT  &hyper
+&kp LSHFT      &kp Z       &kp X       &kp C        &kp V                  &kp B                &kp N        &kp M         &kp COMMA    &kp DOT     &kp FSLH      &kp ESC
+                                       &lt 7 ESC    &hold_op LEFT_SHIFT 0  &hold_space 2 SPACE  &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
             >;
         };
 
@@ -229,10 +229,10 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&none  &none             &kp LC(SPACE)  &kp LG(SPACE)     &kp LS(LA(LC(LG(SPACE))))  &none  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4      &kp MINUS
-&none  &kp LEFT_COMMAND  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT             &none  &kp N5         &kp NUMBER_6  &kp N7        &kp N8                &kp N9            &kp N0
-&none  &none             &none          &kp LC(LEFT_ALT)  &none                      &none  &kp SEMICOLON  &kp SQT       &kp SLASH     &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                        &none             &none                      &none  &kp COMMA      &kp N0        &kp PERIOD
+&none  &none             &kp LS(MINUS)  &kp LS(EQUAL)     &kp MINUS                  &kp EQUAL  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4      &kp MINUS
+&none  &kp LEFT_COMMAND  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT             &none      &kp N5         &kp NUMBER_6  &kp N7        &kp N8                &kp N9            &kp N0
+&none  &kp LA(SPACE)     &kp LC(SPACE)  &kp LG(SPACE)     &kp LS(LA(LC(LG(SPACE))))  &none      &kp SEMICOLON  &kp SQT       &kp SLASH     &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                        &none             &none                      &none      &kp COMMA      &kp N0        &kp PERIOD
             >;
         };
 
@@ -281,7 +281,7 @@
             bindings = <
 &none  &none             &kp LS(MINUS)  &kp LS(EQUAL)     &kp MINUS                  &kp EQUAL  &kp LS(NUMBER_1)   &kp LS(NUMBER_2)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)          &kp LS(NUMBER_4)      &kp MINUS
 &none  &kp LEFT_COMMAND  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT             &none      &kp LS(N5)         &kp LS(NUMBER_6)  &kp LS(N7)        &kp LS(N8)                &kp LS(N9)            &kp LS(N0)
-&none  &none             &kp LC(SPACE)  &kp LG(SPACE)     &kp LS(LA(LC(LG(SPACE))))  &none      &kp LS(SEMICOLON)  &kp LS(SQT)       &kp LS(SLASH)     &kp LS(NON_US_BACKSLASH)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
+&none  &kp LA(SPACE)     &kp LC(SPACE)  &kp LG(SPACE)     &kp LS(LA(LC(LG(SPACE))))  &none      &kp LS(SEMICOLON)  &kp LS(SQT)       &kp LS(SLASH)     &kp LS(NON_US_BACKSLASH)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
                                         &none             &none                      &none      &kp LS(COMMA)      &kp LS(N0)        &kp LS(PERIOD)
             >;
         };
