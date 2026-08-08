@@ -312,10 +312,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp CAPSLOCK                  &hold_q LG(Q) Q  &kp W       &kp E                  &kp R                &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I              &kp O       &hold_p LG(P) P     &kp BSPC
-&mt LS(LA(LC(LEFT_GUI))) TAB  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K              &mt RALT L  &mt RGUI SEMICOLON  &hyper
-&kp RIGHT_SHIFT               &kp GRAVE        &kp Z       &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M              &kp COMMA   &lt 6 PERIOD        &kp RIGHT_SHIFT
-                                                           &hold_op LEFT_SHIFT 0  &lt 6 ESCAPE         &lt 3 SPACE          &lt 1 RET           &lt 6 DELETE     &hold_op LSHIFT 0
+&kp TAB                            &hold_q LG(Q) Q  &kp W       &kp E                  &kp R                &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I              &kp O       &hold_p LG(P) P     &kp BSPC
+&mt LS(LA(LC(LEFT_GUI))) CAPSLOCK  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K              &mt RALT L  &mt RGUI SEMICOLON  &hyper
+&kp RIGHT_SHIFT                    &kp GRAVE        &kp Z       &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M              &kp COMMA   &lt 6 PERIOD        &kp RIGHT_SHIFT
+                                                                &hold_op LEFT_SHIFT 0  &lt 6 ESCAPE         &lt 3 SPACE          &lt 1 RET           &lt 3 DELETE     &hold_op LSHIFT 0
             >;
         };
 
@@ -324,7 +324,7 @@
             bindings = <
 &kp EQUAL          &kp N5            &kp NUMBER_4          &kp NUMBER_3                      &kp NUMBER_2          &kp NUMBER_1         &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
 &kp MINUS          &kp N0            &hold_9 LC(SPACE) N9  &hold_8 LS(LA(LC(LG(SPACE)))) N8  &hold_7 LG(SPACE) N7  &mt ESCAPE NUMBER_6  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
-&kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN  &kp LS(COMMA)     &kp LS(PERIOD)    &none
+&kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN  &kp COMMA         &kp PERIOD        &none
                                                            &kp TAB                           &kp DELETE            &kp ENTER            &none          &none           &none
             >;
         };
