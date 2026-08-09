@@ -319,9 +319,9 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp TAB                            &hold_q LG(Q) Q  &kp W       &kp E                  &kp R                &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I              &kp O       &hold_p LG(P) P     &kp BSPC
-&mt LS(LA(LC(LEFT_GUI))) CAPSLOCK  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K              &mt RALT L  &mt RGUI SEMICOLON  &hyper
-&mt LS(LGUI) RIGHT_SHIFT           &lt 6 GRAVE      &lt 8 Z     &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M              &kp COMMA   &lt 7 PERIOD        &lt 5 RIGHT_SHIFT
+&kp BACKSPACE                      &hold_q LG(Q) Q  &kp W       &kp E                  &kp R                &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I              &kp O        &hold_p LG(P) P     &kp DELETE
+&mt LS(LA(LC(LEFT_GUI))) CAPSLOCK  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K              &mt RALT L   &mt RGUI SEMICOLON  &hyper
+&mt LS(LGUI) RIGHT_SHIFT           &lt 6 GRAVE      &lt 8 Z     &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M              &lt 5 COMMA  &lt 7 PERIOD        &kp RIGHT_SHIFT
                                                                 &hold_op LEFT_SHIFT 0  &lt 4 TAB            &lt 2 SPACE          &lt 1 RET           &lt 3 DELETE     &hold_op LSHIFT 0
             >;
         };
@@ -379,10 +379,10 @@
         media_layer {
             display-name = "MEDIA";
             bindings = <
-&none  &none     &none     &none      &none      &none  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &none         &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &ext_power EP_TOG  &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT    &none
-&none  &none     &none     &none      &none      &none  &out OUT_TOG       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_CLR
-                           &none      &none      &none  &kp C_STOP         &kp C_PP         &kp C_MUTE
+&none  &none     &none     &none   &none      &none      &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &none         &none
+&none  &kp LGUI  &kp LALT  &hyper  &kp LSHFT  &kp LCTRL  &ext_power EP_TOG  &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT    &none
+&none  &none     &none     &none   &none      &none      &out OUT_TOG       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_CLR
+                           &none   &none      &none      &kp C_STOP         &kp C_PP         &kp C_MUTE
             >;
         };
 
