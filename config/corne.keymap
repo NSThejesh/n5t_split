@@ -405,7 +405,7 @@
             bindings = <
 &kp BACKSPACE                      &hold_q LG(Q) Q  &hmd LA(LC(B)) W  &hcc LA(LC(G)) E       &hrr 0 R             &hold_t LG(T) T      &hrr 0 Y            &hzed LG(LC(LA(LS(A)))) U  &hzen LS(LA(LC(LG(S)))) I  &hg LS(LA(LC(LG(D)))) O  &hold_p LG(P) P     &kp DELETE
 &mt LS(LA(LC(LEFT_GUI))) CAPSLOCK  &mt LGUI A       &mt LALT S        &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J                      &kp K                      &mt RALT L               &mt RGUI SEMICOLON  &hyper
-&mt LS(LGUI) RIGHT_SHIFT           &lt 6 GRAVE      &lt 8 Z           &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &hff LA(LC(G)) B    &hold_n LG(N) N            &hmd LA(LC(B)) M           &lt 5 COMMA              &lt 7 PERIOD        &kp RIGHT_SHIFT
+&mt LS(LGUI) RIGHT_SHIFT           &lt 6 GRAVE      &lt 8 Z           &hff LA(LC(X)) X       &hold_copy LG(C) C   &hold_paste LG(V) V  &hff LA(LC(G)) B    &hold_n LG(N) N            &hmd LA(LC(B)) M           &lt 5 COMMA              &lt 7 PERIOD        &kp RIGHT_SHIFT
                                                                       &hold_op LEFT_SHIFT 0  &lt 4 TAB            &lt 2 SPACE          &lt 1 RET           &lt 3 DELETE               &hold_op LSHIFT 0
             >;
         };
