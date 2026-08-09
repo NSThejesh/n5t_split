@@ -369,10 +369,10 @@
         fun-action {
             display-name = "FUN";
             bindings = <
-&none  &none  &none    &kp F1   &kp F2   &kp PSCRN       &none  &kp LG(V)             &kp LG(C)             &kp LG(X)       &none  &none
-&none  &none  &kp F7   &kp F8   &kp F9   &kp SCROLLLOCK  &none  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))  &none  &none
-&none  &none  &kp F10  &kp F11  &kp F12  &kp CAPSLOCK    &none  &none                 &none                 &none           &none  &none
-                       &none    &none    &none           &none  &none                 &none
+&none  &none  &none    &kp F1   &kp F2   &kp PSCRN       &none                 &kp LG(V)             &kp LG(C)       &kp LG(X)  &none  &none
+&none  &none  &kp F7   &kp F8   &kp F9   &kp SCROLLLOCK  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))  &none      &none  &none
+&none  &none  &kp F10  &kp F11  &kp F12  &kp CAPSLOCK    &none                 &none                 &none           &none      &none  &none
+                       &none    &none    &none           &none                 &none                 &none
             >;
         };
 
@@ -388,10 +388,10 @@
 
         window {
             bindings = <
-&kp LA(EQUAL)  &kp LA(N5)  &kp LA(N4)  &kp LA(NUMBER_3)  &kp LA(N2)   &kp LA(N1)     &kp LG(LA(LC(LS(H))))  &kp LC(SLASH)   &kp LC(NON_US_BACKSLASH)  &kp LS(LA(LC(LG(L))))  &none  &none
-&kp LA(MINUS)  &none       &kp LA(N9)  &kp LA(N8)        &kp LA(N7)   &kp LA(N6)     &kp LC(H)              &kp LC(J)       &kp LC(K)                 &kp LC(L)              &none  &none
-&none          &none       &none       &none             &none        &none          &none                  &kp LA(SLASH)   &kp LA(NON_US_BACKSLASH)  &none                  &none  &none
-                                       &kp LA(MINUS)     &kp LA(TAB)  &kp LA(EQUAL)  &kp LEFT_SHIFT         &kp LEFT_SHIFT  &kp LEFT_SHIFT
+&kp LA(EQUAL)  &kp LA(N5)  &kp LA(N4)     &kp LA(NUMBER_3)  &kp LA(N2)     &kp LA(N1)     &kp LG(LA(LC(LS(H))))  &kp LC(SLASH)   &kp LC(NON_US_BACKSLASH)  &kp LS(LA(LC(LG(L))))  &none  &none
+&kp LA(MINUS)  &none       &kp LA(N9)     &kp LA(N8)        &kp LA(N7)     &kp LA(N6)     &kp LC(H)              &kp LC(J)       &kp LC(K)                 &kp LC(L)              &none  &none
+&none          &none       &kp LA(LS(H))  &kp LA(LS(J))     &kp LA(LS(K))  &kp LA(LS(L))  &none                  &kp LA(SLASH)   &kp LA(NON_US_BACKSLASH)  &none                  &none  &none
+                                          &kp LA(MINUS)     &kp LA(TAB)    &kp LA(EQUAL)  &kp LEFT_SHIFT         &kp LEFT_SHIFT  &kp LEFT_SHIFT
             >;
         };
 
