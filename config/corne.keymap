@@ -340,8 +340,8 @@
             bindings = <
 &kp TAB                            &hold_q LG(Q) Q  &kp W       &kp E                  &kp R                &hold_t LG(T) T      &hold_y LG(Y) Y     &kp U            &kp I              &kp O        &hold_p LG(P) P     &kp BSPC
 &mt LS(LA(LC(LEFT_GUI))) CAPSLOCK  &mt LGUI A       &mt LALT S  &mt LA(LCTRL) D        &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &kp K              &mt RALT L   &mt RGUI SEMICOLON  &hyper
-&mt LS(LGUI) RIGHT_SHIFT           &kp GRAVE        &kp Z       &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M              &lt 8 COMMA  &lt 6 PERIOD        &kp RIGHT_SHIFT
-                                                                &hold_op LEFT_SHIFT 0  &lt 6 TAB            &lt 3 SPACE          &lt 1 RET           &lt 3 DELETE     &hold_op LSHIFT 0
+&mt LS(LGUI) RIGHT_SHIFT           &lt 6 GRAVE      &lt 8 Z     &kp X                  &hold_copy LG(C) C   &hold_paste LG(V) V  &kp B               &hold_n LG(N) N  &kp M              &lt 7 COMMA  &lt 5 PERIOD        &kp RIGHT_SHIFT
+                                                                &hold_op LEFT_SHIFT 0  &lt 4 TAB            &lt 2 SPACE          &lt 1 RET           &lt 3 DELETE     &hold_op LSHIFT 0
             >;
         };
 
@@ -405,21 +405,21 @@
             >;
         };
 
-        layer_8 {
+        windows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N5  &kp N4  &kp N3  &kp N2  &kp N1  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N9  &kp N8  &kp N7  &kp N6  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        shortcutslayer {
+        quicknav {
             bindings = <
-&trans  &trans  &trans                         &trans  &trans  &kp LA(LC(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &hold_zen LS(LA(LC(SLASH))) 0  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                         &trans  &ss_c   &ss_c                      &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans  &trans  &trans                     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans    &trans
             >;
         };
     };
