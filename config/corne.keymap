@@ -305,30 +305,92 @@
             tapping-term-ms = <350>;
         };
 
-        h_zen: h_zen {
-            compatible = "zmk,behavior-tap-dance";
-            label = "H_ZEN";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(S))))>, <&kp LC(LA(SQT))>;
-
-            tapping-term-ms = <300>;
-        };
-
-        hold_zen: hold_zen {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_ZEN";
-            bindings = <&kp>, <&h_zen>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-        };
-
         ss_c: ss_c {
             compatible = "zmk,behavior-tap-dance";
             label = "SS_C";
             #binding-cells = <0>;
             bindings = <&kp LA(LC(C))>, <&kp LA(LC(LS(C)))>;
+        };
+
+        h1: h1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H1";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h2: h2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H2";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h3: h3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H3";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h4: h4 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H4";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h5: h5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H5";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h6: h6 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H6";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h7: h7 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H7";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h8: h8 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H8";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+        };
+
+        h9: h9 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H9";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
         };
     };
 
@@ -405,12 +467,12 @@
             >;
         };
 
-        windows {
+        window {
             bindings = <
-&trans  &kp N5  &kp N4  &kp N3  &kp N2  &kp N1  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0  &kp N9  &kp N8  &kp N7  &kp N6  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(EQUAL)  &h5 LA(N5) LA(LS(N5))  &h4 LA(N4) LA(LS(NUMBER_4))  &h3 LA(N3) LA(LS(NUMBER_3))  &h2 LA(N2) LA(LS(NUMBER_2))  &h1 LA(N1) LA(LS(NUMBER_1))  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(MINUS)  &kp LA(N0)             &kp LA(N9)                   &kp LA(N8)                   &kp LA(N7)                   &h6 LA(N6) LA(LS(NUMBER_6))  &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans         &trans                 &trans                       &trans                       &trans                       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+                                                                   &trans                       &trans                       &trans                       &trans  &trans  &trans
             >;
         };
 
