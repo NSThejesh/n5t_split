@@ -60,22 +60,43 @@
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
-            layers = <0>;
             timeout-ms = <200>;
         };
 
         copy {
             bindings = <&kp LG(C)>;
-            key-positions = <27 28>;
+            key-positions = <27 26>;
             timeout-ms = <200>;
-            layers = <0>;
+        };
+
+        cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <28 27>;
+            timeout-ms = <200>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <28 29>;
             timeout-ms = <200>;
-            layers = <0>;
+        };
+
+        apt {
+            bindings = <&kp SQT>;
+            key-positions = <9 10>;
+            timeout-ms = <200>;
+        };
+
+        dapt {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <21 22>;
+            timeout-ms = <200>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <13 25>;
+            timeout-ms = <200>;
         };
     };
 
@@ -339,10 +360,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp BACKSPACE                      &hold_q LG(Q) Q  &hmd LA(LC(B)) W  &hcc LA(LC(G)) E         &hrr 0 R             &hold_t LG(T) T      &hrr 0 Y            &hrr 0 U         &hzen LS(LA(LC(LG(S)))) I  &hg LS(LA(LC(LG(D)))) O  &hold_p LG(P) P     &kp DELETE
-&mt LS(LA(LC(LEFT_GUI))) CAPSLOCK  &mt LGUI A       &mt LALT S        &mt LA(LG(LS(LCTRL))) D  &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &kp MINUS
-&mt LS(LGUI) RIGHT_SHIFT           &lt 6 GRAVE      &lt 8 Z           &hff LA(LC(X)) X         &hold_copy LG(C) C   &hold_paste LG(V) V  &hff LA(LC(G)) B    &hold_n LG(N) N  &hmd LA(LC(B)) M           &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
-                                                                      &hold_op LEFT_SHIFT 0    &lt 4 SPACE          &lt 2 TAB            &lt 1 DELETE        &lt 3 RET        &hold_op LSHIFT 0
+&kp BACKSPACE             &hold_q LG(Q) Q  &mt LA(TAB) W  &kp E                    &hrr 0 R             &hold_t LG(T) T      &hrr 0 Y            &hrr 0 U         &hzen LS(LA(LC(LG(S)))) I  &hg LS(LA(LC(LG(D)))) O  &hold_p LG(P) P     &kp DELETE
+&lt 10 MINUS              &mt LGUI A       &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &lt 9 EQUAL
+&mt LS(LGUI) RIGHT_SHIFT  &lt 6 GRAVE      &lt 8 Z        &hff LA(LC(X)) X         &hold_copy LG(C) C   &hold_paste LG(V) V  &hff LA(LC(G)) B    &hold_n LG(N) N  &hmd LA(LC(B)) M           &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
+                                                          &hold_op LEFT_SHIFT 0    &lt 4 SPACE          &lt 2 TAB            &lt 1 DELETE        &lt 3 RET        &hold_op LSHIFT 0
             >;
         };
 
@@ -421,6 +442,24 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
                         &trans  &trans  &trans  &trans    &trans    &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
