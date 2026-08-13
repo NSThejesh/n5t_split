@@ -90,18 +90,6 @@
             key-positions = <21 22>;
             timeout-ms = <200>;
         };
-
-        undersocre {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <13 25>;
-            timeout-ms = <200>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <22 34>;
-            timeout-ms = <200>;
-        };
     };
 
     macros {
@@ -365,7 +353,7 @@
             display-name = "BASE";
             bindings = <
 &kp BACKSPACE             &hold_q LG(Q) Q  &mt LA(TAB) W  &kp E                    &hrr 0 R             &hold_t LG(T) T      &hrr 0 Y            &hrr 0 U         &hzen LS(LA(LC(LG(S)))) I  &hg LS(LA(LC(LG(D)))) O  &hold_p LG(P) P     &kp DELETE
-&lt 10 MINUS              &mt LGUI A       &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &lt 9 EQUAL
+&kp MINUS                 &mt LGUI A       &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &hold_f F LG(SPACE)  &mt LEFT_CONTROL G   &mt LEFT_CONTROL H  &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &kp EQUAL
 &mt LS(LGUI) RIGHT_SHIFT  &lt 6 GRAVE      &lt 8 Z        &hff LA(LC(X)) X         &hold_copy LG(C) C   &hold_paste LG(V) V  &hff LA(LC(G)) B    &hold_n LG(N) N  &hmd LA(LC(B)) M           &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
                                                           &hold_op LEFT_SHIFT 0    &lt 4 SPACE          &lt 2 TAB            &lt 1 DELETE        &lt 3 RET        &hold_op LSHIFT 0
             >;
@@ -446,24 +434,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
                         &trans  &trans  &trans  &trans    &trans    &trans
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
