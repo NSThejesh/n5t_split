@@ -79,15 +79,9 @@
             timeout-ms = <200>;
         };
 
-        apt {
-            bindings = <&kp SQT>;
-            key-positions = <9 10>;
-            timeout-ms = <200>;
-        };
-
-        dapt {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <21 22>;
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <25 13>;
             timeout-ms = <200>;
         };
     };
@@ -132,38 +126,6 @@
             hold-while-undecided;
         };
 
-        hold_space: hold_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_SPACE";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-            hold-while-undecided;
-        };
-
-        hold_f: hold_f {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_F";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-            hold-while-undecided;
-        };
-
-        hold_d: hold_d {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_D";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-        };
-
         hold_q: hold_q {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_Q";
@@ -177,16 +139,6 @@
         hold_t: hold_t {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_T";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-        };
-
-        hold_y: hold_y {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_Y";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -231,16 +183,6 @@
             tapping-term-ms = <350>;
         };
 
-        hold_paste: hold_paste {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_PASTE";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-while-undecided;
-            tapping-term-ms = <350>;
-        };
-
         hold_n: hold_n {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_N";
@@ -259,13 +201,6 @@
             #binding-cells = <2>;
             hold-while-undecided;
             tapping-term-ms = <350>;
-        };
-
-        ss_c: ss_c {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SS_C";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(C))>, <&kp LA(LC(LS(C)))>;
         };
 
         hzen: hzen {
@@ -301,31 +236,9 @@
             flavor = "balanced";
         };
 
-        hcc: hcc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HCC";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-
         hff: hff {
             compatible = "zmk,behavior-hold-tap";
             label = "HFF";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-
-        hmd: hmd {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -344,6 +257,25 @@
             quick-tap-ms = <200>;
             flavor = "balanced";
         };
+
+        layerhh: layerhh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYERHH";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <200>;
+        };
+
+        layerh: layerh {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYERH";
+            bindings = <&lt>, <&layerhh>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+        };
     };
 
     keymap {
@@ -354,7 +286,7 @@
             bindings = <
 &kp BACKSPACE             &hold_q LG(Q) Q  &mt LA(TAB) W  &kp E                    &hrr 0 R                &hold_t LG(T) T      &hzed LG(LC(LA(LS(A)))) Y  &hrr 0 U         &hzen LS(LA(LC(LG(S)))) I  &hg LS(LA(LC(LG(D)))) O  &hold_p LG(P) P     &kp DELETE
 &kp MINUS                 &mt LGUI A       &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &hff F LC(LA(G))        &mt LEFT_CONTROL G   &mt LEFT_CONTROL H         &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &kp EQUAL
-&mt LS(LGUI) RIGHT_SHIFT  &lt 6 GRAVE      &lt 8 Z        &hff LA(LC(X)) X         &hold_copy LA(LC(C)) C  &hzen LA(LC(SQT)) V  &kp B                      &hold_n LG(N) N  &kp M                      &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
+&mt LS(LGUI) RIGHT_SHIFT  &layerh 6 0      &lt 8 Z        &hff LA(LC(X)) X         &hold_copy LA(LC(C)) C  &hzen LA(LC(SQT)) V  &mt LC(LA(Z)) B            &hold_n LG(N) N  &kp M                      &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
                                                           &hold_op LEFT_SHIFT 0    &lt 4 SPACE             &lt 2 TAB            &lt 1 DELETE               &lt 3 RET        &hold_op LSHIFT 0
             >;
         };
