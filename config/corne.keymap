@@ -84,6 +84,11 @@
             key-positions = <25 13>;
             timeout-ms = <200>;
         };
+
+        undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
@@ -96,14 +101,6 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LGUI &kp LALT &kp LCTRL &kp LSHFT>;
-        };
-
-        test: test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp P>, <&macro_press>;
-
-            label = "TEST";
         };
     };
 
