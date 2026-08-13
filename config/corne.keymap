@@ -353,8 +353,8 @@
             display-name = "BASE";
             bindings = <
 &kp BACKSPACE             &hold_q LG(Q) Q  &mt LA(TAB) W  &kp E                    &hrr 0 R                &hold_t LG(T) T      &hzed LG(LC(LA(LS(A)))) Y  &hrr 0 U         &hzen LS(LA(LC(LG(S)))) I  &hg LS(LA(LC(LG(D)))) O  &hold_p LG(P) P     &kp DELETE
-&kp MINUS                 &mt LGUI A       &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &hold_f F LG(SPACE)     &mt LEFT_CONTROL G   &mt LEFT_CONTROL H         &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &kp EQUAL
-&mt LS(LGUI) RIGHT_SHIFT  &lt 6 GRAVE      &lt 8 Z        &hff LA(LC(X)) X         &hold_copy LA(LC(C)) C  &hzen LA(LC(SQT)) V  &hff LA(LC(G)) B           &hold_n LG(N) N  &hmd LA(LC(B)) M           &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
+&kp MINUS                 &mt LGUI A       &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &hff F LC(LA(G))        &mt LEFT_CONTROL G   &mt LEFT_CONTROL H         &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &kp EQUAL
+&mt LS(LGUI) RIGHT_SHIFT  &lt 6 GRAVE      &lt 8 Z        &hff LA(LC(X)) X         &hold_copy LA(LC(C)) C  &hzen LA(LC(SQT)) V  &kp B                      &hold_n LG(N) N  &kp M                      &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
                                                           &hold_op LEFT_SHIFT 0    &lt 4 SPACE             &lt 2 TAB            &lt 1 DELETE               &lt 3 RET        &hold_op LSHIFT 0
             >;
         };
