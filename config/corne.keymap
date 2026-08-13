@@ -321,10 +321,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&none  &none     &none     &none   &none      &none      &kp TAB   &kp LG(V)  &kp LG(C)      &kp LG(X)  &kp LG(Z)  &none
-&none  &kp LGUI  &kp LALT  &hyper  &kp LSHFT  &kp LCTRL  &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp CAPS   &none
-&none  &none     &none     &none   &none      &none      &kp INS   &kp HOME   &kp PG_DN      &kp PG_UP  &kp END    &none
-                           &none   &none      &none      &kp RET   &kp DEL    &kp BACKSPACE
+&none  &none  &none  &none   &none  &none  &kp LS(LA(LC(LG(A))))  &kp LG(LC(LA(LS(M))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(D))))  &none  &none
+&none  &none  &none  &hyper  &none  &none  &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &none  &none
+&none  &none  &none  &none   &none  &none  &kp INS                &kp HOME               &kp PG_DN              &kp PG_UP              &none  &none
+                     &none   &none  &none  &kp RET                &kp DEL                &kp LEFT_SHIFT
             >;
         };
 
