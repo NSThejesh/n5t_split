@@ -91,9 +91,15 @@
             timeout-ms = <200>;
         };
 
+        undersocre {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <13 25>;
+            timeout-ms = <200>;
+        };
+
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <13 25>;
+            key-positions = <22 34>;
             timeout-ms = <200>;
         };
     };
