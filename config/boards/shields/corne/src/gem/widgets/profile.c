@@ -1,6 +1,6 @@
 #include <zephyr/kernel.h>
 #include "profile.h"
-LV_IMG_DECLARE(profiles);
+LV_IMAGE_DECLARE(profiles);
 void draw_profile_status(lv_obj_t *canvas, const struct status_state *state) {
     lv_draw_image_dsc_t d;
     lv_draw_image_dsc_init(&d);

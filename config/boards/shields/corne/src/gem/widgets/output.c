@@ -1,12 +1,16 @@
 #include <zephyr/kernel.h>
 #include "output.h"
 #include "../assets/custom_fonts.h"
-LV_IMG_DECLARE(bt_no_signal);
-LV_IMG_DECLARE(bt_unbonded);
-LV_IMG_DECLARE(bt);
-LV_IMG_DECLARE(usb);
+LV_IMAGE_DECLARE(bt_no_signal);
+LV_IMAGE_DECLARE(bt_unbonded);
+LV_IMAGE_DECLARE(bt);
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+LV_IMAGE_DECLARE(usb);
+#endif
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 static void draw_usb(lv_obj_t *c) { lv_draw_image_dsc_t d; lv_draw_image_dsc_init(&d); canvas_draw_img(c, 30, 1, &usb, &d); }
 static void draw_unbonded(lv_obj_t *c) { lv_draw_image_dsc_t d; lv_draw_image_dsc_init(&d); canvas_draw_img(c, 29, 0, &bt_unbonded, &d); }
+#endif
 static void draw_disc(lv_obj_t *c) { lv_draw_image_dsc_t d; lv_draw_image_dsc_init(&d); canvas_draw_img(c, 33, 0, &bt_no_signal, &d); }
 static void draw_conn(lv_obj_t *c) { lv_draw_image_dsc_t d; lv_draw_image_dsc_init(&d); canvas_draw_img(c, 33, 0, &bt, &d); }
 void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
@@ -23,6 +27,7 @@ void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
         if (state->active_profile_bonded) { if (state->active_profile_connected) draw_conn(canvas); else draw_disc(canvas); }
         else draw_unbonded(canvas);
         break;
+    default: draw_disc(canvas); break;
     }
 #else
     if (state->connected) draw_conn(canvas); else draw_disc(canvas);
