@@ -36,7 +36,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <450>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
 };
@@ -55,39 +55,34 @@
         // -- Tier 2: High Value --
         // -- Tier 3: Vertical Symbol Combos --
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <19 20>;
-            timeout-ms = <200>;
-        };
-
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <28 27>;
-            timeout-ms = <200>;
+            timeout-ms = <350>;
         };
 
         cut {
             bindings = <&kp LG(X)>;
             key-positions = <27 26>;
-            timeout-ms = <200>;
+            timeout-ms = <350>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <28 29>;
-            timeout-ms = <200>;
+            timeout-ms = <350>;
         };
 
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <25 13>;
-            timeout-ms = <200>;
+            timeout-ms = <350>;
         };
 
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <18 19>;
+            timeout-ms = <350>;
         };
     };
 
@@ -123,26 +118,6 @@
             hold-while-undecided;
         };
 
-        hold_q: hold_q {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_Q";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-        };
-
-        hold_t: hold_t {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_T";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
-        };
-
         hold_7: hold_7 {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_7";
@@ -170,98 +145,13 @@
             tapping-term-ms = <350>;
         };
 
-        hold_copy: hold_copy {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_COPY";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-while-undecided;
-            tapping-term-ms = <350>;
-        };
-
-        hold_n: hold_n {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_N";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-while-undecided;
-            tapping-term-ms = <350>;
-        };
-
-        hold_p: hold_p {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_P";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-while-undecided;
-            tapping-term-ms = <350>;
-        };
-
-        hzen: hzen {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HZEN";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-
-        hzed: hzed {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HZED";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-
-        hg: hg {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HG";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-
-        hff: hff {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HFF";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-
-        hrr: hrr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRR";
-            bindings = <&key_repeat>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-
         layerhh: layerhh {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYERHH";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
         };
 
         layerh: layerh {
@@ -272,6 +162,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -281,20 +172,20 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp BACKSPACE             &hold_q LG(Q) Q  &mt LA(TAB) W  &kp E                    &hrr 0 R                &hold_t LG(T) T      &hzed LG(LC(LA(LS(A)))) Y  &hrr 0 U         &hzen LS(LA(LC(LG(S)))) I  &hg LS(LA(LC(LG(D)))) O  &hold_p LG(P) P     &kp DELETE
-&kp MINUS                 &mt LGUI A       &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &hff F LC(LA(G))        &mt LEFT_CONTROL G   &mt LEFT_CONTROL H         &kp J            &mt LC(LA(LS(LGUI))) K     &mt RALT L               &mt RGUI SEMICOLON  &kp EQUAL
-&mt LS(LGUI) RIGHT_SHIFT  &layerh 6 0      &lt 8 Z        &hff LA(LC(X)) X         &hold_copy LA(LC(C)) C  &hzen LA(LC(SQT)) V  &mt LC(LA(Z)) B            &hold_n LG(N) N  &kp M                      &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
-                                                          &hold_op LEFT_SHIFT 0    &lt 4 SPACE             &lt 2 TAB            &lt 1 DELETE               &lt 3 RET        &hold_op LSHIFT 0
+&kp BACKSPACE             &mt LG(Q) Q  &mt LA(TAB) W  &kp E                    &kp R            &mt LG(T) T         &mt LG(Y) Y         &mt LS(LA(LC(LG(A)))) U  &mt LS(LA(LC(LG(S)))) I  &mt LS(LA(LC(LG(D)))) O  &kp P               &kp DELETE
+&kp MINUS                 &mt LGUI A   &mt LALT S     &mt LA(LG(LS(LCTRL))) D  &mt F LC(LA(G))  &mt LEFT_CONTROL G  &mt LEFT_CONTROL H  &kp J                    &kp K                    &mt RALT L               &mt RGUI SEMICOLON  &kp EQUAL
+&mt LS(LGUI) RIGHT_SHIFT  &layerh 6 0  &lt 8 Z        &mt LA(LC(X)) X          &mt LA(LC(C)) C  &mt LA(LC(SQT)) V   &mt LC(LA(Z)) B     &mt LG(N) N              &kp M                    &lt 5 COMMA              &lt 7 PERIOD        &mt LS(LGUI) RIGHT_SHIFT
+                                                      &hold_op LEFT_SHIFT 0    &lt 4 SPACE      &lt 2 TAB           &lt 1 DELETE        &lt 3 RET                &hold_op LSHIFT 0
             >;
         };
 
         numandwm {
             display-name = "NUM";
             bindings = <
-&kp EQUAL          &kp N5            &kp NUMBER_4          &kp NUMBER_3                      &kp NUMBER_2          &kp NUMBER_1         &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
-&kp MINUS          &kp N0            &hold_9 LC(SPACE) N9  &hold_8 LS(LA(LC(LG(SPACE)))) N8  &hold_7 LG(SPACE) N7  &mt ESCAPE NUMBER_6  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
-&kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                         &kp SQT               &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN  &kp COMMA         &kp PERIOD        &none
-                                                           &kp TAB                           &kp DELETE            &kp ENTER            &none          &none           &none
+&kp EQUAL          &kp N5            &kp NUMBER_4          &kp NUMBER_3                  &kp NUMBER_2      &kp NUMBER_1         &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
+&kp MINUS          &kp N0            &mt LC(SPACE) N9      &mt LS(LA(LC(LG(SPACE)))) N8  &mt LG(SPACE) N7  &mt ESCAPE NUMBER_6  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
+&kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp NON_US_BACKSLASH  &kp SLASH                     &kp SQT           &kp SEMICOLON        &none          &kp LESS_THAN   &kp GREATER_THAN  &kp COMMA         &kp PERIOD        &none
+                                                           &kp TAB                       &kp DELETE        &kp ENTER            &none          &none           &none
             >;
         };
 
@@ -311,10 +202,10 @@
         symbols {
             display-name = "NUM";
             bindings = <
-&kp UNDERSCORE   &kp PERCENT            &kp DOLLAR                          &kp HASH                                &kp AT_SIGN                  &kp EXCLAMATION   &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
-&kp PLUS         &kp RIGHT_PARENTHESIS  &hold_9 LC(SPACE) LEFT_PARENTHESIS  &hold_8 LS(LA(LC(LG(SPACE)))) ASTERISK  &hold_7 LG(SPACE) AMPERSAND  &mt ESCAPE CARET  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
-&kp RIGHT_BRACE  &kp LEFT_BRACE         &kp NON_US_BACKSLASH                &kp SLASH                               &kp SQT                      &kp SEMICOLON     &none          &kp LESS_THAN   &kp GREATER_THAN  &kp COMMA         &kp PERIOD        &none
-                                                                            &kp TAB                                 &kp DELETE                   &kp ENTER         &none          &none           &none
+&kp UNDERSCORE   &kp PERCENT            &kp DOLLAR                      &kp HASH                            &kp AT_SIGN              &kp EXCLAMATION   &kp LS(LCTRL)  &kp LG(V)       &kp LG(C)         &kp LS(LEFT_ALT)  &kp LS(LEFT_GUI)  &none
+&kp PLUS         &kp RIGHT_PARENTHESIS  &mt LC(SPACE) LEFT_PARENTHESIS  &mt LS(LA(LC(LG(SPACE)))) ASTERISK  &mt LG(SPACE) AMPERSAND  &mt ESCAPE CARET  &kp LCTRL      &kp LEFT_SHIFT  &hyper            &kp LEFT_ALT      &kp LEFT_GUI      &none
+&kp RIGHT_BRACE  &kp LEFT_BRACE         &kp NON_US_BACKSLASH            &kp SLASH                           &kp SQT                  &kp SEMICOLON     &none          &kp LESS_THAN   &kp GREATER_THAN  &kp COMMA         &kp PERIOD        &none
+                                                                        &kp TAB                             &kp DELETE               &kp ENTER         &none          &none           &none
             >;
         };
 
