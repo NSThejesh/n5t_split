@@ -359,8 +359,8 @@
 
         quicknav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &kp W   &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &kp A   &kp S   &kp D   &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans     &trans  &trans
                         &trans  &trans  &trans  &trans    &trans    &trans
             >;
