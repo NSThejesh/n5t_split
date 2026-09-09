@@ -61,7 +61,11 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(cv, widget->cbuf, CANVAS_W, CANVAS_H, CANVAS_COLOR_FORMAT);
     lv_obj_align(cv, LV_ALIGN_TOP_LEFT, 0, 0);
     draw_animation(widget->obj);
+    widget->state.battery = zmk_battery_state_of_charge();
+    widget->state.charging = zmk_usb_is_powered();
+    widget->state.connected = zmk_split_bt_peripheral_is_connected();
     sys_slist_append(&widgets, &widget->node);
+    redraw(widget->obj, &widget->state);
     widget_battery_status_init();
     widget_peripheral_status_init();
     return 0;

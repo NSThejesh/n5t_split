@@ -113,7 +113,16 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(cv, widget->cbuf, CANVAS_W, CANVAS_H, CANVAS_COLOR_FORMAT);
     lv_obj_align(cv, LV_ALIGN_TOP_LEFT, 0, 0);
     for (int i = 0; i < 10; i++) widget->state.wpm[i] = 0;
+    widget->state.battery = zmk_battery_state_of_charge();
+    widget->state.charging = zmk_usb_is_powered();
+    widget->state.selected_endpoint = zmk_endpoint_get_selected();
+    widget->state.active_profile_index = zmk_ble_active_profile_index();
+    widget->state.active_profile_connected = zmk_ble_active_profile_is_connected();
+    widget->state.active_profile_bonded = !zmk_ble_active_profile_is_open();
+    widget->state.layer_index = zmk_keymap_highest_layer_active();
+    widget->state.layer_label = zmk_keymap_layer_name(widget->state.layer_index);
     sys_slist_append(&widgets, &widget->node);
+    redraw(widget->obj, &widget->state);
     widget_battery_status_init();
     widget_layer_status_init();
     widget_output_status_init();

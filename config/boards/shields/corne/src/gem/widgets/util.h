@@ -7,8 +7,8 @@
 #define CANVAS_H 32
 #define CANVAS_SIZE 128
 #define CANVAS_COLOR_FORMAT LV_COLOR_FORMAT_I1
-#define LVGL_BACKGROUND lv_color_black()
-#define LVGL_FOREGROUND lv_color_white()
+#define LVGL_BACKGROUND lv_color_white()
+#define LVGL_FOREGROUND lv_color_black()
 struct status_state {
     uint8_t battery;
     bool charging;
