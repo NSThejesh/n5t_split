@@ -2,10 +2,10 @@
 include:
   # OLED display (built-in SSD1306 from corne shield)
   - board: nice_nano//zmk
-    shield: corne_left
+    shield: corne_left nice_oled
     snippet: studio-rpc-usb-uart
   - board: nice_nano//zmk
-    shield: corne_right
+    shield: corne_right nice_oled
 
   # nice!view display (ZMK built-in nice_view shield)
   - board: nice_nano//zmk
