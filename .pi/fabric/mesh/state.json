@@ -1,0 +1,117 @@
+{
+  "format": 1,
+  "entries": {
+    "topology/peer-seq": {
+      "key": "topology/peer-seq",
+      "value": {
+        "format": 1,
+        "next": 1
+      },
+      "version": 1,
+      "updatedAt": 1788967017146,
+      "updatedBy": {
+        "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a086bd-ee4c-7699-9c07-ef8867875daa"
+      }
+    },
+    "topology/hosts/f360ec1b8965368de50aa81adacf6d88f0eba847e32f50956f6bfdbf16150e30": {
+      "key": "topology/hosts/f360ec1b8965368de50aa81adacf6d88f0eba847e32f50956f6bfdbf16150e30",
+      "value": {
+        "format": 1,
+        "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "rootId": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "identity": {
+          "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+          "name": "main",
+          "kind": "main",
+          "sessionId": "01a086bd-ee4c-7699-9c07-ef8867875daa"
+        },
+        "startedAt": 1788967017140,
+        "updatedAt": 1788967027148,
+        "expiresAt": 1788967042148
+      },
+      "version": 11,
+      "updatedAt": 1788967027150,
+      "updatedBy": {
+        "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a086bd-ee4c-7699-9c07-ef8867875daa"
+      }
+    },
+    "sessions/01a086bd-ee4c-7699-9c07-ef8867875daa": {
+      "key": "sessions/01a086bd-ee4c-7699-9c07-ef8867875daa",
+      "value": {
+        "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "name": "NS-1",
+        "label": "NS-1",
+        "kind": "peer",
+        "status": "running",
+        "runner": "pi",
+        "transport": "host",
+        "cwd": "/Users/nst/n5t_split",
+        "sessionId": "01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "model": "opencode/ling-3.0-flash-fin-free",
+        "thinking": "high",
+        "startedAt": 1788967017139,
+        "updatedAt": 1788967027148,
+        "pendingMessages": false,
+        "local": false
+      },
+      "version": 11,
+      "updatedAt": 1788967027152,
+      "updatedBy": {
+        "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a086bd-ee4c-7699-9c07-ef8867875daa"
+      }
+    },
+    "topology/participants/f360ec1b8965368de50aa81adacf6d88f0eba847e32f50956f6bfdbf16150e30": {
+      "key": "topology/participants/f360ec1b8965368de50aa81adacf6d88f0eba847e32f50956f6bfdbf16150e30",
+      "value": {
+        "format": 1,
+        "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "kind": "root",
+        "rootId": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "ownerHostId": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "ownerIdentityId": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "name": "main",
+        "status": "running",
+        "runner": "pi",
+        "transport": "host",
+        "capabilities": [
+          "steer",
+          "followUp",
+          "fabric"
+        ],
+        "cwd": "/Users/nst/n5t_split",
+        "sessionId": "01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "model": "opencode/ling-3.0-flash-fin-free",
+        "thinking": "high",
+        "startedAt": 1788967017139,
+        "updatedAt": 1788967027149,
+        "pendingMessages": false,
+        "controlProtocol": "v1",
+        "label": "NS-1"
+      },
+      "version": 11,
+      "updatedAt": 1788967027153,
+      "updatedBy": {
+        "id": "session:01a086bd-ee4c-7699-9c07-ef8867875daa",
+        "name": "main",
+        "kind": "main",
+        "sessionId": "01a086bd-ee4c-7699-9c07-ef8867875daa"
+      }
+    }
+  },
+  "versions": {
+    "topology/peer-seq": 1,
+    "topology/hosts/f360ec1b8965368de50aa81adacf6d88f0eba847e32f50956f6bfdbf16150e30": 11,
+    "sessions/01a086bd-ee4c-7699-9c07-ef8867875daa": 11,
+    "topology/participants/f360ec1b8965368de50aa81adacf6d88f0eba847e32f50956f6bfdbf16150e30": 11
+  },
+  "tombstoneOrder": []
+}
